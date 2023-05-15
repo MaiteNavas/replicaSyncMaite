@@ -1,0 +1,11 @@
+header{
+    position: fixed;
+    display:flex table-row;
+}
+.logo{
+    width: 100px;
+}
+ul {
+    list-style: none;
+
+}
