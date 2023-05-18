@@ -4,11 +4,13 @@ body{
     width:100%;
     display: flex;
     flex-flow: column nowrap;
+    max-width: 1500px;
 }
 /* HEADER */
 header{
     background-color: #F7FAFD;
     width: 100%;
+    max-width: 1500px;
     z-index: 3;
     position: fixed;
     display: flex;
@@ -42,15 +44,18 @@ ul {
 li{
     padding: 10px;
     font-weight: bold;
-    font-size: 1.5vw;   
+    font-size: 1,1vw;   
 }
 
 #button-nav {
     background-color:#F7FAFD;
     color: #FE546E;
     border-color: #FE546E;
-    font-size: 1.5vw;  
+    font-size: 1.1vw;  
     padding: 5px 25px 5px 25px; 
+}
+.nav-li :hover {
+    color: #FF556F;
 }
 /* HEADER */
 
@@ -145,7 +150,7 @@ button {
 .intro-div-2-li{
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -392,6 +397,12 @@ button {
     background-color: #E9EFF6;
 
 }
+.screens-div-2-li {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+}
 
 .screens-div-2-li-num {
     font-weight: bold;
@@ -425,22 +436,46 @@ button {
 /* MAIN */
 /* FOOTER */
 footer{
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    padding:75px 25px 25px 25px;
+    border-top: #333333;
 }
 
 #footer-main {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
+h4 {
+    color:#777879;
+}
+
+.footer-div-rrss {
+    display:flex;
+    flex-flow: row wrap;
+    gap: 4%;
+    width: 20%;
+}
 .footer-div {
     display:flex;
     flex-flow: column nowrap;
     justify-content: space-around;
 }
+.img-rrss-background {
+    background-color: #777879;
+    border-radius: 25px;
+    display:flex;
+}
+
+.img-rrss {
+    filter: invert(100%);
+}
+
 
 /* FOOTER */
 
